@@ -79,7 +79,7 @@ export default class GroupList extends Component {
     super(props);
   }
 
-  async componentWillMount() {
+  async UNSAFE_componentWillMount() {
     const groupId = !isNaN(this.props.match.params.groupId)
       ? parseInt(this.props.match.params.groupId)
       : 0;
@@ -198,7 +198,7 @@ export default class GroupList extends Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     // GroupSetting 组件设置的分组信息，通过redux同步到左侧分组菜单中
     if (this.props.groupList !== nextProps.groupList) {
       this.setState({
@@ -221,7 +221,7 @@ export default class GroupList extends Component {
                   <Icon className="btn" type="folder-add" onClick={this.showModal} />
                 </a>
               </Tooltip>
-            
+
             </div>
             <div className="curr-group-desc">简介: {currGroup.group_desc}</div>
           </div>

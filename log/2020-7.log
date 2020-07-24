@@ -928,3 +928,13 @@ http://127.0.0.1:3000/
 http://127.0.0.1:3000/
 [ 2020-7-24 18:20:41 ] [ error ] MongoTimeoutError: Server selection timed out after 30000 ms, mongodb Authentication failed
 [ 2020-7-24 18:20:41 ] [ log ] mongodb load success...
+[ 2020-7-24 18:30:42 ] [ log ] -------------------------------------swaggerSyncUtils constructor-----------------------------------------------
+[ 2020-7-24 18:30:42 ] [ log ] 服务已启动，请打开下面链接访问: 
+http://127.0.0.1:3000/
+[ 2020-7-24 18:31:12 ] [ error ] MongoTimeoutError: Server selection timed out after 30000 ms, mongodb Authentication failed
+[ 2020-7-24 18:31:12 ] [ log ] mongodb load success...
+[ 2020-7-24 18:31:26 ] [ log ] -------------------------------------swaggerSyncUtils constructor-----------------------------------------------
+[ 2020-7-24 18:31:28 ] [ log ] 服务已启动，请打开下面链接访问: 
+http://127.0.0.1:3000/
+[ 2020-7-24 18:31:55 ] [ error ] MongoTimeoutError: Server selection timed out after 30000 ms, mongodb Authentication failed
+[ 2020-7-24 18:31:55 ] [ log ] mongodb load success...

@@ -89,11 +89,11 @@ export default class ProjectInterfaceSync extends Component {
       await this.props.handleSwaggerUrlData(value);
     } catch(e) {
       callback('swagger地址不正确');
-    } 
+    }
     callback()
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     //查询同步任务
     this.setState({
       sync_data: {}

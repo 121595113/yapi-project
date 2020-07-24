@@ -908,3 +908,23 @@ http://127.0.0.1:3000/
 [ 7/24/2020, 5:28:00 PM ] [ log ] 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/hcrm/v2/api-docs,合并模式:merge
 [ 7/24/2020, 5:30:00 PM ] [ log ] 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/hcrm/v2/api-docs,合并模式:merge
 [ 7/24/2020, 5:32:00 PM ] [ log ] 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/hcrm/v2/api-docs,合并模式:merge
+[ 2020-7-24 18:12:05 ] [ log ] -------------------------------------swaggerSyncUtils constructor-----------------------------------------------
+[ 2020-7-24 18:12:06 ] [ log ] 服务已启动，请打开下面链接访问: 
+http://127.0.0.1:3000/
+[ 2020-7-24 18:12:35 ] [ error ] MongoTimeoutError: Server selection timed out after 30000 ms, mongodb Authentication failed
+[ 2020-7-24 18:12:35 ] [ log ] mongodb load success...
+[ 2020-7-24 18:15:18 ] [ log ] -------------------------------------swaggerSyncUtils constructor-----------------------------------------------
+[ 2020-7-24 18:15:18 ] [ log ] 服务已启动，请打开下面链接访问: 
+http://127.0.0.1:3000/
+[ 2020-7-24 18:15:48 ] [ error ] MongoTimeoutError: Server selection timed out after 30000 ms, mongodb Authentication failed
+[ 2020-7-24 18:15:48 ] [ log ] mongodb load success...
+[ 2020-7-24 18:17:01 ] [ log ] -------------------------------------swaggerSyncUtils constructor-----------------------------------------------
+[ 2020-7-24 18:17:01 ] [ log ] 服务已启动，请打开下面链接访问: 
+http://127.0.0.1:3000/
+[ 2020-7-24 18:17:30 ] [ error ] MongoTimeoutError: Server selection timed out after 30000 ms, mongodb Authentication failed
+[ 2020-7-24 18:17:30 ] [ log ] mongodb load success...
+[ 2020-7-24 18:20:11 ] [ log ] -------------------------------------swaggerSyncUtils constructor-----------------------------------------------
+[ 2020-7-24 18:20:11 ] [ log ] 服务已启动，请打开下面链接访问: 
+http://127.0.0.1:3000/
+[ 2020-7-24 18:20:41 ] [ error ] MongoTimeoutError: Server selection timed out after 30000 ms, mongodb Authentication failed
+[ 2020-7-24 18:20:41 ] [ log ] mongodb load success...

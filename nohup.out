@@ -1,0 +1,39 @@
+log: -------------------------------------swaggerSyncUtils constructor-----------------------------------------------
+log: 服务已启动，请打开下面链接访问: 
+http://127.0.0.1:3000/
+log: mongodb load success...
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+(node:16228) [DEP0106] DeprecationWarning: crypto.createCipher is deprecated.
+(node:16228) DeprecationWarning: collection.update is deprecated. Use updateOne, updateMany, or bulkWrite instead.
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+(node:16228) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good
+log: 定时器触发, syncJsonUrl:http://uat-api.jiahui.com/his-app/v2/api-docs?group=AppApi,合并模式:good

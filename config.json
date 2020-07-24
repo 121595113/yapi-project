@@ -1,12 +1,10 @@
 {
    "port": "3000",
-   "adminAccount": "yunai.wang@medcloud.cn",
+   "adminAccount": "admin@admin.com",
    "db": {
-      "servername": "dds-bp11a495dde4f3341.mongodb.rds.aliyuncs.com",
+      "servername": "127.0.0.1",
       "DATABASE": "yapi",
-      "port": "3717",
-      "user": "yapi",
-      "pass": "7p2KsMC0FeaTxlbI"
+      "port": "27017"
    },
    "mail": {
       "enable": false,

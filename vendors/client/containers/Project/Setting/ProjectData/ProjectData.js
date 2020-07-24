@@ -443,7 +443,7 @@ class ProjectData extends Component {
                         }}
                         dangerouslySetInnerHTML={{
                           __html: this.state.curImportType
-                            ? importDataModule[this.state.curImportType].desc
+                            ? (importDataModule[this.state.curImportType] || {}).desc
                             : null
                         }}
                       />

@@ -1,0 +1,21 @@
+{
+   "port": "3000",
+   "adminAccount": "yunai.wang@medcloud.cn",
+   "db": {
+      "servername": "dds-bp11a495dde4f3341.mongodb.rds.aliyuncs.com",
+      "DATABASE": "yapi",
+      "port": "3717",
+      "user": "yapi",
+      "pass": "7p2KsMC0FeaTxlbI"
+   },
+   "mail": {
+      "enable": false,
+      "host": "smtp.163.com",
+      "port": 465,
+      "from": "***@163.com",
+      "auth": {
+         "user": "***@163.com",
+         "pass": "*****"
+      }
+   }
+}

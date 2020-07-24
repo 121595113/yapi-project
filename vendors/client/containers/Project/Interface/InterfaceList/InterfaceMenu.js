@@ -18,6 +18,7 @@ import axios from 'axios';
 import { Link, withRouter } from 'react-router-dom';
 import produce from 'immer';
 import { arrayChangeIndex } from '../../../../common.js';
+import variable from '../../../../constants/variable';
 
 import './interfaceMenu.scss';
 
@@ -460,6 +461,9 @@ class InterfaceMenu extends Component {
     };
 
     const itemInterfaceCreate = item => {
+      let methodColor =
+            variable.METHOD_COLOR[item.method ? item.method.toLowerCase() : 'get'] ||
+            variable.METHOD_COLOR['get'];
       return (
         <TreeNode
           title={
@@ -473,6 +477,12 @@ class InterfaceMenu extends Component {
                 onClick={e => e.stopPropagation()}
                 to={'/project/' + matchParams.id + '/interface/api/' + item._id}
               >
+                <span
+                  style={{ color: methodColor.color, backgroundColor: methodColor.bac }}
+                  className="colValue"
+                >
+                  {item.method}
+                </span>
                 {item.title}
               </Link>
               <div className="btns">

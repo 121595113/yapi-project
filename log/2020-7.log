@@ -938,3 +938,50 @@ http://127.0.0.1:3000/
 http://127.0.0.1:3000/
 [ 2020-7-24 18:31:55 ] [ error ] MongoTimeoutError: Server selection timed out after 30000 ms, mongodb Authentication failed
 [ 2020-7-24 18:31:55 ] [ log ] mongodb load success...
+[ 2020-7-24 18:45:14 ] [ log ] -------------------------------------swaggerSyncUtils constructor-----------------------------------------------
+[ 2020-7-24 18:45:14 ] [ log ] 服务已启动，请打开下面链接访问: 
+http://127.0.0.1:3000/
+[ 2020-7-24 18:45:43 ] [ error ] MongoTimeoutError: Server selection timed out after 30000 ms, mongodb Authentication failed
+[ 2020-7-24 18:45:43 ] [ log ] mongodb load success...
+[ 2020-7-24 18:50:13 ] [ log ] -------------------------------------swaggerSyncUtils constructor-----------------------------------------------
+[ 2020-7-24 18:50:14 ] [ log ] 服务已启动，请打开下面链接访问: 
+http://127.0.0.1:3000/
+[ 2020-7-24 18:50:43 ] [ error ] MongoTimeoutError: Server selection timed out after 30000 ms, mongodb Authentication failed
+[ 2020-7-24 18:50:43 ] [ log ] mongodb load success...
+[ 2020-7-24 18:51:10 ] [ log ] -------------------------------------swaggerSyncUtils constructor-----------------------------------------------
+[ 2020-7-24 18:51:10 ] [ log ] 服务已启动，请打开下面链接访问: 
+http://127.0.0.1:3000/
+[ 2020-7-24 18:51:39 ] [ error ] MongoTimeoutError: Server selection timed out after 30000 ms, mongodb Authentication failed
+[ 2020-7-24 18:51:39 ] [ log ] mongodb load success...
+[ 2020-7-24 19:00:17 ] [ log ] -------------------------------------swaggerSyncUtils constructor-----------------------------------------------
+[ 2020-7-24 19:00:18 ] [ log ] 服务已启动，请打开下面链接访问: 
+http://127.0.0.1:3000/
+[ 2020-7-24 19:01:15 ] [ log ] -------------------------------------swaggerSyncUtils constructor-----------------------------------------------
+[ 2020-7-24 19:01:16 ] [ log ] 服务已启动，请打开下面链接访问: 
+http://127.0.0.1:3000/
+[ 2020-7-24 19:01:45 ] [ error ] MongoTimeoutError: Server selection timed out after 30000 ms, mongodb Authentication failed
+[ 2020-7-24 19:01:45 ] [ log ] mongodb load success...
+[ 2020-7-24 19:14:24 ] [ log ] -------------------------------------swaggerSyncUtils constructor-----------------------------------------------
+[ 2020-7-24 19:14:25 ] [ log ] 服务已启动，请打开下面链接访问: 
+http://127.0.0.1:3000/
+[ 2020-7-24 19:14:46 ] [ log ] -------------------------------------swaggerSyncUtils constructor-----------------------------------------------
+[ 2020-7-24 19:14:46 ] [ log ] 服务已启动，请打开下面链接访问: 
+http://127.0.0.1:3000/
+[ 2020-7-24 19:15:15 ] [ error ] MongoTimeoutError: Server selection timed out after 30000 ms, mongodb Authentication failed
+[ 2020-7-24 19:15:15 ] [ log ] mongodb load success...
+[ 2020-7-24 19:16:28 ] [ log ] -------------------------------------swaggerSyncUtils constructor-----------------------------------------------
+[ 2020-7-24 19:16:28 ] [ log ] 服务已启动，请打开下面链接访问: 
+http://127.0.0.1:3000/
+[ 2020-7-24 19:16:58 ] [ error ] MongoTimeoutError: Server selection timed out after 30000 ms, mongodb Authentication failed
+[ 2020-7-24 19:16:58 ] [ log ] mongodb load success...
+[ 2020-7-24 19:17:04 ] [ log ] -------------------------------------swaggerSyncUtils constructor-----------------------------------------------
+[ 2020-7-24 19:17:04 ] [ log ] 服务已启动，请打开下面链接访问: 
+http://127.0.0.1:3000/
+[ 2020-7-24 19:17:34 ] [ error ] MongoTimeoutError: Server selection timed out after 30000 ms, mongodb Authentication failed
+[ 2020-7-24 19:17:34 ] [ log ] mongodb load success...
+[ 2020-7-24 19:19:37 ] [ error ] MongoTimeoutError: Server selection timed out after 30000 ms, mongodb Authentication failed
+[ 2020-7-24 19:19:37 ] [ log ] mongodb load success...
+[ 2020-7-24 19:25:45 ] [ log ] -------------------------------------swaggerSyncUtils constructor-----------------------------------------------
+[ 2020-7-24 19:25:45 ] [ log ] 服务已启动，请打开下面链接访问: 
+http://127.0.0.1:3000/
+[ 2020-7-24 19:25:45 ] [ log ] mongodb load success...

@@ -11,6 +11,11 @@ import createStore from './reducer/create';
 // 由于 antd 组件的默认文案是英文，所以需要修改为中文
 import zhCN from 'antd/lib/locale-provider/zh_CN';
 
+if (process.env.NODE_ENV === 'production') {
+  const Sentry = require('@sentry/react')
+  Sentry.init({dsn: "http://6a74bc50d18a41868ea6f5209f871cfd@sentry.medcloud.cn/4"});
+}
+
 const store = createStore();
 
 ReactDOM.render(

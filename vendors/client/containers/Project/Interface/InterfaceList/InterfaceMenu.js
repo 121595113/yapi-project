@@ -482,7 +482,7 @@ class InterfaceMenu extends Component {
                   className="colValue"
                 >
                   {item.method}
-                </span>
+                </span>&nbsp;
                 {item.title}
               </Link>
               <div className="btns">

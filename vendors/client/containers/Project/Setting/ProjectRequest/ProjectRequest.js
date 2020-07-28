@@ -40,7 +40,7 @@ export default class ProjectRequest extends Component {
       pre_script: this.state.pre_script,
       after_script: this.state.after_script
     });
-    if (result.payload.data.errcode === 0) {
+    if (result.payload.data && result.payload.data.errcode === 0) {
       message.success('保存成功');
       await this.props.getProject(this.props.projectId);
     } else {

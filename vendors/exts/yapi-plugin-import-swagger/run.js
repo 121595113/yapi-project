@@ -157,7 +157,7 @@ const compareVersions = require('compare-versions');
           api.catname = data.tags[i];
           break;
         }
-        
+
       }
 
     }
@@ -188,7 +188,8 @@ const compareVersions = require('compare-versions');
     }
 
     //处理response
-    api.res_body = handleResponse(data.responses);
+    const res_body = handleResponse(data.responses);
+    api.res_body = res_body.replace(/"\$ref/g, '"$$$ref');
     try {
       JSON.parse(api.res_body);
       api.res_body_type = 'json';

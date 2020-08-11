@@ -106,7 +106,7 @@ class Content extends Component {
     });
   };
   render() {
-    if (this.props.curdata.title) {
+    if (this.props.curdata && this.props.curdata.title) {
       document.getElementsByTagName('title')[0].innerText =
         this.props.curdata.title + '-' + this.title;
     }

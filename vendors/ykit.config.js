@@ -184,6 +184,12 @@ module.exports = {
         });
 
         baseConfig.module.preLoaders.push({
+          test: /\.(js|jsx)$/,
+          include: [path.resolve(__dirname, './node_modules/swagger-client')],
+          loader: 'babel-loader'
+        });
+
+        baseConfig.module.preLoaders.push({
           test: /\.json$/,
           loader: 'json-loader'
         });

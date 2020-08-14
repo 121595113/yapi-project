@@ -88,7 +88,7 @@ class ProjectData extends Component {
     fetchUpdateLogData: PropTypes.func,
     updateLogList: PropTypes.array,
     handleSwaggerUrlData: PropTypes.func,
-    swaggerUrlData: PropTypes.string
+    swaggerUrlData: PropTypes.oneOfType([PropTypes.func, PropTypes.object, PropTypes.string])
   };
 
   UNSAFE_componentWillMount() {

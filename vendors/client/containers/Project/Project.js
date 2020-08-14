@@ -139,7 +139,7 @@ export default class Project extends Component {
       });
     }
 
-    if (Object.keys(this.props.curProject).length === 0) {
+    if (Object.keys(this.props.curProject || {}).length === 0) {
       return <Loading visible />;
     }
 

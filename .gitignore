@@ -1,3 +1,4 @@
 node_modules
 .history
 vendors/static/prd
+log/

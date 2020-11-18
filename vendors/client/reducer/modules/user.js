@@ -56,7 +56,7 @@ export default (state = initialState, action) => {
       };
     }
     case LOGIN: {
-      if (action.payload.data.errcode === 0) {
+      if (action.payload.data && action.payload.data.errcode === 0) {
         return {
           ...state,
           isLogin: true,

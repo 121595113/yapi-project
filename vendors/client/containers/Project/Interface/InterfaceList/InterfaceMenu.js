@@ -431,7 +431,7 @@ class InterfaceMenu extends Component {
       </div>
     );
     const defaultExpandedKeys = () => {
-      const { router, inter, list } = this.props,
+      const { router, inter, list = [] } = this.props,
         rNull = { expands: [], selects: [] };
       if (list.length === 0) {
         return rNull;

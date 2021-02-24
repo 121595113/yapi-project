@@ -1,7 +1,13 @@
 # 修改记录
 
-## 升级react 生命周期
+本文件目前需要手动维护
 
-## 二次开发运行或打包报swagger-client/lib/http.js等Module parse failed错误 #1865
+## Features
 
-把 exts/yapi-plugin-import-swagger/index.js 置为 false ，可以临时关闭
+* 接入sentry，并添加performance性能监控
+* 升级react 生命周期
+
+## Bug Fixes
+
+* 导入接口Menu分类优化
+* 二次开发运行或打包报swagger-client/lib/http.js等Module parse failed错误 [#1865](https://github.com/YMFE/yapi/issues/1865)

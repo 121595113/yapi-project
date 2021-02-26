@@ -1,4 +1,5 @@
 node_modules
 .history
 vendors/static/prd
+vendors/static/prd_sourcemap
 log/

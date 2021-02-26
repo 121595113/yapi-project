@@ -1,0 +1,16 @@
+{
+   "adminAccount": "admin@admin.com",
+   "db": {
+      "servername": "127.0.0.1",
+      "DATABASE": "yapi",
+      "port": "27017"
+   },
+   "plugins": [
+      {
+         "name": "notifier",
+         "options": {
+            "host": "http://localhost:3000"
+         }
+      }
+   ]
+}

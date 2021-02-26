@@ -4,6 +4,7 @@
 
 ## Features
 
+* 接入消息通知插件[yapi-plugin-notifier](https://github.com/congqiu/yapi-plugin-notifier) (2021-2-25)
 * 接入sentry，并添加performance性能监控
 * 升级react 生命周期
 

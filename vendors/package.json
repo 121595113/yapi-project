@@ -5,11 +5,11 @@
   "main": "server/app.js",
   "scripts": {
     "dev-copy-icon": "cp -r static/iconfont ./",
-    "dev-server": " nodemon server/app.js dev -L",
-    "install-server": " node server/install.js",
-    "dev-client": "npm run dev-copy-icon && ykit s -p 4000",
+    "dev-server": "NODE_ENV=dev nodemon server/app.js dev -L",
+    "install-server": "node server/install.js",
+    "dev-client": "npm run dev-copy-icon && NODE_ENV=dev ykit s -p 4000",
     "dev": "npm run dev-server & npm run dev-client",
-    "start": " node server/app.js",
+    "start": "node server/app.js",
     "test": "ava",
     "build-client": "NODE_ENV=production ykit pack -m",
     "npm-publish": "node ./npm-publish.js",
@@ -85,6 +85,7 @@
     "underscore": "1.8.3",
     "url": "0.11.0",
     "vm2": "^3.8.4",
+    "yapi-plugin-notifier": "^1.0.2",
     "yapi-plugin-qsso": "^1.1.0"
   },
   "devDependencies": {

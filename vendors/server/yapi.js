@@ -3,6 +3,16 @@ const fs = require('fs-extra');
 const nodemailer = require('nodemailer');
 const config = require('../../config.json');
 
+if (process.env.NODE_ENV === 'dev') {
+  const configDev = require('../../config-dev.json');
+
+  Object.entries(configDev).map(([key, value]) => {
+    if (config[key] !== value) {
+      config[key] = value
+    }
+  })
+}
+
 let insts = new Map();
 let mail;
 

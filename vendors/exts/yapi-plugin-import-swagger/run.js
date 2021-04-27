@@ -157,7 +157,7 @@ const compareVersions = require('compare-versions');
     if(data.tags && Array.isArray(data.tags)){
       api.tag = data.tags;
       for(let i=0; i< data.tags.length; i++){
-        if(/v[0-9\.]+/.test(data.tags[i])){
+        if(/^v[0-9\.]+$/.test(data.tags[i])){
           continue;
         }
 
@@ -204,7 +204,8 @@ const compareVersions = require('compare-versions');
     }
 
     //处理response
-    api.res_body = handleResponse(data.responses);
+    const res_body = handleResponse(data.responses);
+    api.res_body = res_body.replace(/"\$ref/g, '"$$$ref');
     try {
       JSON.parse(api.res_body);
       api.res_body_type = 'json';

@@ -88,10 +88,10 @@ class ProjectData extends Component {
     fetchUpdateLogData: PropTypes.func,
     updateLogList: PropTypes.array,
     handleSwaggerUrlData: PropTypes.func,
-    swaggerUrlData: PropTypes.string
+    swaggerUrlData: PropTypes.oneOfType([PropTypes.func, PropTypes.object, PropTypes.string])
   };
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     axios.get(`/api/interface/getCatMenu?project_id=${this.props.match.params.id}`).then(data => {
       if (data.data.errcode === 0) {
         let menuList = data.data.data;
@@ -443,7 +443,7 @@ class ProjectData extends Component {
                         }}
                         dangerouslySetInnerHTML={{
                           __html: this.state.curImportType
-                            ? importDataModule[this.state.curImportType].desc
+                            ? (importDataModule[this.state.curImportType] || {}).desc
                             : null
                         }}
                       />

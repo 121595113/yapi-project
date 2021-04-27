@@ -1,4 +1,5 @@
 import React, { PureComponent as Component } from 'react';
+import { message } from 'antd';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Route, Switch, Redirect, matchPath } from 'react-router-dom';
@@ -41,22 +42,26 @@ export default class Project extends Component {
     super(props);
   }
 
-  async componentWillMount() {
+  async UNSAFE_componentWillMount() {
     await this.props.getProject(this.props.match.params.id);
-    await this.props.fetchGroupMsg(this.props.curProject.group_id);
+    try {
+      await this.props.fetchGroupMsg(this.props.curProject.group_id);
 
-    this.props.setBreadcrumb([
-      {
-        name: this.props.currGroup.group_name,
-        href: '/group/' + this.props.currGroup._id
-      },
-      {
-        name: this.props.curProject.name
-      }
-    ]);
+      this.props.setBreadcrumb([
+        {
+          name: this.props.currGroup.group_name,
+          href: '/group/' + this.props.currGroup._id
+        },
+        {
+          name: this.props.curProject.name
+        }
+      ]);
+    } catch (err) {
+      message.error(err.message)
+    }
   }
 
-  async componentWillReceiveProps(nextProps) {
+  async UNSAFE_componentWillReceiveProps(nextProps) {
     const currProjectId = this.props.match.params.id;
     const nextProjectId = nextProps.match.params.id;
     if (currProjectId !== nextProjectId) {
@@ -139,7 +144,7 @@ export default class Project extends Component {
       });
     }
 
-    if (Object.keys(this.props.curProject).length === 0) {
+    if (Object.keys(this.props.curProject || {}).length === 0) {
       return <Loading visible />;
     }
 

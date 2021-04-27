@@ -54,8 +54,8 @@ export default (state = initialState, action) => {
     case FETCH_INTERFACE_LIST: {
       return {
         ...state,
-        totalTableList: action.payload.data.data.list,
-        totalCount: action.payload.data.data.count
+        totalTableList: action.payload.data.data ? action.payload.data.data.list : [],
+        totalCount: action.payload.data.data ? action.payload.data.data.count : 0
       };
     }
 

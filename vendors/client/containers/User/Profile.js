@@ -85,7 +85,7 @@ class Profile extends Component {
     this.handleUserinfo(this.props);
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (!nextProps.match.params.uid) {
       return;
     }
@@ -224,14 +224,14 @@ class Profile extends Component {
     if (this.state.usernameEdit === false) {
       userNameEditHtml = (
         <div>
-          <span className="text">{userinfo.username}</span>&nbsp;&nbsp;
+          <span className="text">{userinfo && userinfo.username}</span>&nbsp;&nbsp;
           {/*<span className="text-button"  onClick={() => { this.handleEdit('usernameEdit', true) }}><Icon type="edit" />修改</span>*/}
           {/* {btn} */}
           {/* 站点登陆才能编辑 */}
           {userType && (
             <EditButton
               userType={userType}
-              isOwner={userinfo.uid === this.props.curUid}
+              isOwner={userinfo && userinfo.uid === this.props.curUid}
               isAdmin={this.props.curRole === 'admin'}
               onClick={this.handleEdit}
               name="usernameEdit"

@@ -4,7 +4,7 @@
   "description": "YAPI",
   "main": "server/app.js",
   "scripts": {
-    "dev-copy-icon": "cp -r static/iconfont ./",
+    "dev-copy-icon": "npx cpy static/iconfont ./iconfont",
     "dev-server": "NODE_ENV=dev nodemon server/app.js dev -L",
     "install-server": "node server/install.js",
     "dev-client": "npm run dev-copy-icon && NODE_ENV=dev ykit s -p 4000",
@@ -122,7 +122,7 @@
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
     "markdown-it-include": "^1.0.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.14.1",
     "nodemon": "^1.11.0",
     "prop-types": "^15.5.10",
     "rc-queue-anim": "^1.2.0",

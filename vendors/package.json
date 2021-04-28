@@ -8,7 +8,7 @@
     "dev-server": "cross-env NODE_ENV=dev nodemon server/app.js dev -L",
     "install-server": "cross-env NODE_ENV=dev node server/install.js",
     "dev-client": "npm run dev-copy-icon && cross-env NODE_ENV=dev ykit s -p 4000",
-    "dev": "npm-p dev-server dev-client",
+    "dev": "npm-run-all -p dev-server dev-client",
     "start": "node server/app.js",
     "test": "ava",
     "build-client": "cross-env NODE_ENV=production ykit pack -m",

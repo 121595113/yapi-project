@@ -76,7 +76,7 @@ class VariablesSelect extends Component {
     }
   }
 
-  async UNSAFE_componentWillReceiveProps(nextProps) {
+  async componentWillReceiveProps(nextProps) {
     if (this.records && nextProps.id && this.id !== nextProps.id) {
       this.handleRecordsData(nextProps.id);
     }

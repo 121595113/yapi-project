@@ -60,7 +60,7 @@ const HomeGuest = () => (
           </Col>
           <Col lg={15} xs={0} className="col-img">
             <div className="img-container">
-              
+
             </div>
           </Col>
         </Row>
@@ -337,7 +337,7 @@ class Home extends Component {
     super(props);
   }
 
-  UNSAFE_componentWillMount() {
+  componentWillMount() {
     if (this.props.login) {
       this.props.history.push('/group/261');
     }

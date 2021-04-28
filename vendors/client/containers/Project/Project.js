@@ -42,7 +42,7 @@ export default class Project extends Component {
     super(props);
   }
 
-  async UNSAFE_componentWillMount() {
+  async componentWillMount() {
     await this.props.getProject(this.props.match.params.id);
     try {
       await this.props.fetchGroupMsg(this.props.curProject.group_id);
@@ -61,7 +61,7 @@ export default class Project extends Component {
     }
   }
 
-  async UNSAFE_componentWillReceiveProps(nextProps) {
+  async componentWillReceiveProps(nextProps) {
     const currProjectId = this.props.match.params.id;
     const nextProjectId = nextProps.match.params.id;
     if (currProjectId !== nextProjectId) {
@@ -154,7 +154,7 @@ export default class Project extends Component {
         <Switch>
           <Redirect exact from="/project/:id" to={`/project/${match.params.id}/interface/api`} />
           {/* <Route path={routers.activity.path} component={Activity} />
-          
+
           <Route path={routers.setting.path} component={Setting} />
           {this.props.currGroup.type !== 'private' ?
             <Route path={routers.members.path} component={routers.members.component}/>

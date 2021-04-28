@@ -91,7 +91,7 @@ class ProjectData extends Component {
     swaggerUrlData: PropTypes.oneOfType([PropTypes.func, PropTypes.object, PropTypes.string])
   };
 
-  UNSAFE_componentWillMount() {
+  componentWillMount() {
     axios.get(`/api/interface/getCatMenu?project_id=${this.props.match.params.id}`).then(data => {
       if (data.data.errcode === 0) {
         let menuList = data.data.data;
@@ -485,7 +485,7 @@ class ProjectData extends Component {
                 {this.state.curExportType ? (
                   <div>
                     <p className="export-desc">{exportDataModule[this.state.curExportType].desc}</p>
-                    <a 
+                    <a
                       target="_blank"
                       rel="noopener noreferrer"
                       href={exportHref}>

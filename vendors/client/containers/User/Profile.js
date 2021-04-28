@@ -85,7 +85,7 @@ class Profile extends Component {
     this.handleUserinfo(this.props);
   }
 
-  UNSAFE_componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps(nextProps) {
     if (!nextProps.match.params.uid) {
       return;
     }

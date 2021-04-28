@@ -218,7 +218,7 @@ class ProjectMessage extends Component {
     });
   };
 
-  async UNSAFE_componentWillMount() {
+  async componentWillMount() {
     await this.props.fetchGroupList();
     await this.props.fetchGroupMsg(this.props.projectMsg.group_id);
   }
@@ -463,7 +463,7 @@ class ProjectMessage extends Component {
                     <Icon type="unlock" />公开<br />
                     <span className="radio-desc">任何人都可以索引并查看项目信息</span>
                   </Radio>}
-                  
+
                 </RadioGroup>
               )}
             </FormItem>

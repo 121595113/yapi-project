@@ -70,7 +70,7 @@ export default class ProjectMock extends Component {
     }
   };
 
-  UNSAFE_componentWillMount() {
+  componentWillMount() {
     this.setState({
       is_mock_open: this.props.projectMsg.is_mock_open,
       project_mock_script: this.props.projectMsg.project_mock_script

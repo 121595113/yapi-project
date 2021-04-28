@@ -140,7 +140,7 @@ class statisticsPage extends Component {
     };
   }
 
-  async UNSAFE_componentWillMount() {
+  async componentWillMount() {
     this.props.setBreadcrumb([{ name: '系统信息' }]);
     this.getStatisData();
     this.getSystemStatusData();

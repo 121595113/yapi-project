@@ -43,7 +43,7 @@ class Follows extends Component {
     });
   };
 
-  async UNSAFE_componentWillMount() {
+  async componentWillMount() {
     this.props.setBreadcrumb([{ name: '我的关注' }]);
     this.props.getFollowList(this.props.uid).then(res => {
       if (res.payload.data.errcode === 0) {

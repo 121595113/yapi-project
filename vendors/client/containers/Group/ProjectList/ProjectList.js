@@ -82,7 +82,7 @@ class ProjectList extends Component {
     this.props.fetchProjectList(this.props.currGroup._id, this.props.currPage);
   };
 
-  UNSAFE_componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps(nextProps) {
     this.props.setBreadcrumb([{ name: '' + (nextProps.currGroup.group_name || '') }]);
 
     // 切换分组

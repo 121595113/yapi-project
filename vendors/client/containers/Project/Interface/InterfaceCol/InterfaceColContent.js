@@ -168,7 +168,7 @@ class InterfaceColContent extends Component {
     this.handleColdata(this.props.currCaseList);
   }
 
-  async UNSAFE_componentWillMount() {
+  async componentWillMount() {
     const result = await this.props.fetchInterfaceColList(this.props.match.params.id);
     await this.props.getToken(this.props.match.params.id);
     let { currColId } = this.props;
@@ -464,7 +464,7 @@ class InterfaceColContent extends Component {
   }
 
   onChangeTest = d => {
-    
+
     this.setState({
       commonSetting: {
         ...this.state.commonSetting,
@@ -480,7 +480,7 @@ class InterfaceColContent extends Component {
     this.aceEditor.editor.insertCode(code);
   };
 
-  async UNSAFE_componentWillReceiveProps(nextProps) {
+  async componentWillReceiveProps(nextProps) {
     let newColId = !isNaN(nextProps.match.params.actionId) ? +nextProps.match.params.actionId : 0;
 
     if ((newColId && this.currColId && newColId !== this.currColId) || nextProps.isRander) {
@@ -657,7 +657,7 @@ class InterfaceColContent extends Component {
       })
     }
   }
-  
+
   render() {
     const currProjectId = this.props.currProject._id;
     const columns = [
@@ -1231,7 +1231,7 @@ class InterfaceColContent extends Component {
             </Row>
             <Row type="flex" justify="space-around" className="row" align="middle">
               <Col span={21} className="autoTestUrl">
-                <a 
+                <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href={localUrl + autoTestsUrl} >

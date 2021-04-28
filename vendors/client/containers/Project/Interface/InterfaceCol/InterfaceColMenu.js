@@ -103,11 +103,11 @@ export default class InterfaceColMenu extends Component {
     super(props);
   }
 
-  UNSAFE_componentWillMount() {
+  componentWillMount() {
     this.getList();
   }
 
-  UNSAFE_componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps(nextProps) {
     if (this.props.interfaceColList !== nextProps.interfaceColList) {
       this.setState({
         list: nextProps.interfaceColList
@@ -246,7 +246,7 @@ export default class InterfaceColMenu extends Component {
     let data = caseData.payload.data.data;
     data = JSON.parse(JSON.stringify(data));
     data.casename=`${data.casename}_copy`
-    delete data._id 
+    delete data._id
     const res = await axios.post('/api/col/add_case',data);
       if (!res.data.errcode) {
         message.success('克隆用例成功');
@@ -494,7 +494,7 @@ export default class InterfaceColMenu extends Component {
       list = list.filter(item => {
 
         item.caseList = item.caseList.filter(inter => {
-          if (inter.casename.indexOf(this.state.filterValue) === -1 
+          if (inter.casename.indexOf(this.state.filterValue) === -1
           && inter.path.indexOf(this.state.filterValue) === -1
           ) {
             return false;

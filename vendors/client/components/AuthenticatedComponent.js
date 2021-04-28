@@ -25,10 +25,10 @@ export function requireAuthentication(Component) {
       history: PropTypes.object,
       changeMenuItem: PropTypes.func
     };
-    UNSAFE_componentWillMount() {
+    componentWillMount() {
       this.checkAuth();
     }
-    UNSAFE_componentWillReceiveProps() {
+    componentWillReceiveProps() {
       this.checkAuth();
     }
     checkAuth() {
